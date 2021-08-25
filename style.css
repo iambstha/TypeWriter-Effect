@@ -1,0 +1,59 @@
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    font-size: medium;
+}
+h1,h2{
+    margin: 0;
+    padding: 10px 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 2rem;
+}
+.text > .txt{
+    border-right: 0.2rem solid #eee;
+}
+h1{
+    font-size: 3.5rem;
+    color: #fff;
+}
+.container h1 > span{
+    color: rgb(218, 157, 4);
+}
+h2{
+    font-size: 2rem;
+    color: #ddd;
+}
+@media(min-width : 1200px){
+    h1{
+        font-size: 5rem;
+    }
+}
+
+@media(max-width : 720px){
+    .container{
+        padding: 0 1rem;
+    }
+    h1{
+        font-size: 2.8rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width : 500px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+}
+
